@@ -1,0 +1,294 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('./fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('./fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+
+
+#contactuswp-image-loader {
+    background-image: url('../images/Ball-1s-40px.gif');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: contain;
+    background-position: center;
+    height: 45px;
+    width: 100%;
+    display: none;
+}
+
+.roundBtn i {
+    border-radius: 50% !important;
+}
+
+.squareBtn i {
+    border-radius: 5px !important;
+}
+
+.roundFBtn {
+    border-radius: 50% !important;
+}
+
+.squareFBtn {
+    border-radius: 5px !important;
+}
+
+.contactuswpBtnClass {
+    position: fixed;
+    bottom: 25px;
+    text-align: center;
+    z-index: 10000;
+    padding: 10px;
+    border: 0;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+
+.contactuswpBtnClass i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactuswpBtnClass i:hover,
+.contactuswpBtnClass i:active {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.contactuswp-form-button {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 0 !important;
+    padding: 1px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    line-height: 1.3em;
+    margin: 0px 5px;
+    cursor: pointer !important;
+}
+
+#contactuswpFormDiv {
+    display: none;
+    background-color: #ffffff;
+    color: #333;
+    position: fixed;
+    z-index: 12000;
+    bottom: 80px;
+    width: 400px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    border-radius: 10px;
+    border: none;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, 0.2 );
+    padding: 5px;
+    overflow-y: scroll;
+    line-height: normal;
+    height: auto !important;
+    max-height: calc(100% - 100px) !important;
+    margin-top: 100px !important;
+    padding: 35px;
+
+}
+
+#contactuswpFormDiv h3 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 600;
+    color: #333333;
+}
+
+#contactuswpFormDiv label {
+    line-height: normal !important;
+}
+
+#contactuswpBtn.left {
+
+    left: 30px;
+
+}
+
+#contactuswpFormDiv.left {
+
+    left: 35px;
+
+}
+
+#contactuswpBtn.right {
+
+    right: 30px;
+
+}
+
+#contactuswpFormDiv.right {
+
+    right: 35px;
+
+}
+
+#contactuswp-captcha-div {
+    text-align: right !important;
+}
+
+#contactuswp-captcha-div #ans {
+    width: 50px;
+}
+
+#contactuswp-captcha-div #question,
+#contactuswp-captcha-div #ans,
+#contactuswp-captcha-div #contactuswp-captcha-refresh {
+    display: inline !important;
+}
+
+#contactuswpForm {
+    text-align: left;
+}
+
+#contactuswpForm label {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    padding: 10px;
+    line-height: 1.3em;
+}
+
+#contactuswpForm input,
+#contactuswpForm textarea {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    padding: 5px 10px;
+    background-color: #f7fafb;
+    width: 100%;
+    border-radius: 5px;
+    color: #333333;
+    border: none !important; 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+#contactuswpForm input::placeholder,
+#contactuswpForm textarea::placeholder {
+    color: #888888;
+}
+
+.cuwp-class-formrow {
+    width: 100%;
+    padding: 5px;
+}
+
+.cuwp-class-label {
+    width: 100%;
+    display: none;
+}
+
+.cuwp-class-input {
+    width: 100%;
+}
+
+div#contactuswp-msg-warning,
+div#contactuswp-msg-success,
+div#contactuswp-msg-normal {
+    display: none;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#contactuswp-form-close {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    display: none;
+    text-align: right;
+}
+
+#contactuswp-close-btn {
+    width: auto;
+    margin: 5px;
+}
+
+#contactuswp-captcha-success,
+#contactuswp-captcha-fail {
+    display: none;
+
+}
+
+#contactuswp-captcha-message,
+#contactuswp-captcha-success,
+#contactuswp-captcha-fail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:900px) {
+    #contactuswp-form-close {
+        display: block;
+    }
+
+    #contactuswpFormDiv {
+        width: 100%;
+        height: 100% !important;
+        bottom: 0px;
+        margin-top: 0px !important;
+        max-height: -webkit-fill-available !important;
+        max-height: fill-available !important;
+        max-width: -webkit-fill-available !important;
+        max-width: fill-available !important;
+    }
+
+    #contactuswpFormDiv h3 {
+        font-size: 26px !important;
+    }
+
+    #contactuswpFormDiv.right {
+        right: 0px;
+    }
+
+    #contactuswpFormDiv.left {
+        left: 0px;
+    }
+
+    #contactuswpForm input,
+    #contactuswpForm textarea {
+        border: none !important;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+    }
+}
